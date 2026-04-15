@@ -1,0 +1,139 @@
+﻿  dll_main.cpp
+C:\Users\sanja\source\repos\pe-sieve\dll_main.cpp(11,10): error C1083: Cannot open include file: 'pe_sieve_api.h': No such file or directory
+  main.cpp
+C:\Users\sanja\source\repos\pe-sieve\pe_sieve.h(12,10): error C1083: Cannot open include file: 'pe_sieve_types.h': No such file or directory
+  (compiling source file 'main.cpp')
+  
+  params_dump.cpp
+C:\Users\sanja\source\repos\pe-sieve\params_info\params_dump.h(4,10): error C1083: Cannot open include file: 'pe_sieve_types.h': No such file or directory
+  (compiling source file 'params_info/params_dump.cpp')
+  
+  pe_sieve_params_info.cpp
+C:\Users\sanja\source\repos\pe-sieve\params_info\pe_sieve_params_info.h(4,10): error C1083: Cannot open include file: 'pe_sieve_types.h': No such file or directory
+  (compiling source file 'params_info/pe_sieve_params_info.cpp')
+  
+  pe_sieve.cpp
+C:\Users\sanja\source\repos\pe-sieve\pe_sieve.h(12,10): error C1083: Cannot open include file: 'pe_sieve_types.h': No such file or directory
+  (compiling source file 'pe_sieve.cpp')
+  
+  pe_sieve_api.cpp
+C:\Users\sanja\source\repos\pe-sieve\pe_sieve.h(12,10): error C1083: Cannot open include file: 'pe_sieve_types.h': No such file or directory
+  (compiling source file 'pe_sieve_api.cpp')
+  
+  dump_report.cpp
+C:\Users\sanja\source\repos\pe-sieve\postprocessors\dump_report.h(10,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'postprocessors/dump_report.cpp')
+  
+  iat_block.cpp
+C:\Users\sanja\source\repos\pe-sieve\postprocessors\imp_rec\iat_block.h(3,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'postprocessors/imp_rec/iat_block.cpp')
+  
+  import_table_finder.cpp
+C:\Users\sanja\source\repos\pe-sieve\postprocessors\imp_rec\import_table_finder.h(2,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'postprocessors/imp_rec/import_table_finder.cpp')
+  
+  imp_reconstructor.cpp
+C:\Users\sanja\source\repos\pe-sieve\postprocessors\imp_rec\imp_reconstructor.h(6,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'postprocessors/imp_rec/imp_reconstructor.cpp')
+  
+  pe_buffer.cpp
+C:\Users\sanja\source\repos\pe-sieve\postprocessors\pe_buffer.h(3,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'postprocessors/pe_buffer.cpp')
+  
+  pe_reconstructor.cpp
+C:\Users\sanja\source\repos\pe-sieve\postprocessors\pe_reconstructor.h(6,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'postprocessors/pe_reconstructor.cpp')
+  
+  report_formatter.cpp
+C:\Users\sanja\source\repos\pe-sieve\postprocessors\report_formatter.h(6,10): error C1083: Cannot open include file: 'pe_sieve_types.h': No such file or directory
+  (compiling source file 'postprocessors/report_formatter.cpp')
+  
+  results_dumper.cpp
+C:\Users\sanja\source\repos\pe-sieve\postprocessors\report_formatter.h(6,10): error C1083: Cannot open include file: 'pe_sieve_types.h': No such file or directory
+  (compiling source file 'postprocessors/results_dumper.cpp')
+  
+  artefact_scanner.cpp
+C:\Users\sanja\source\repos\pe-sieve\scanners\artefact_scanner.h(7,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'scanners/artefact_scanner.cpp')
+  
+  code_scanner.cpp
+C:\Users\sanja\source\repos\pe-sieve\scanners\module_scanner.h(7,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'scanners/code_scanner.cpp')
+  
+  headers_scanner.cpp
+C:\Users\sanja\source\repos\pe-sieve\scanners\module_scanner.h(7,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'scanners/headers_scanner.cpp')
+  
+  hook_targets_resolver.cpp
+C:\Users\sanja\source\repos\pe-sieve\scanners\scan_report.h(10,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'scanners/hook_targets_resolver.cpp')
+  
+  iat_scanner.cpp
+C:\Users\sanja\source\repos\pe-sieve\scanners\module_scanner.h(7,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'scanners/iat_scanner.cpp')
+  
+  mapping_scanner.cpp
+C:\Users\sanja\source\repos\pe-sieve\scanners\module_scanner.h(7,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'scanners/mapping_scanner.cpp')
+  
+  Generating Code...
+  Compiling...
+  mempage_data.cpp
+C:\Users\sanja\source\repos\pe-sieve\scanners\mempage_data.h(5,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'scanners/mempage_data.cpp')
+  
+  module_cache.cpp
+C:\Users\sanja\source\repos\pe-sieve\scanners\module_cache.h(3,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'scanners/module_cache.cpp')
+  
+  module_data.cpp
+C:\Users\sanja\source\repos\pe-sieve\scanners\module_data.h(8,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'scanners/module_data.cpp')
+  
+  patch_analyzer.cpp
+C:\Users\sanja\source\repos\pe-sieve\scanners\module_data.h(8,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'scanners/patch_analyzer.cpp')
+  
+  patch_list.cpp
+C:\Users\sanja\source\repos\pe-sieve\scanners\patch_list.h(7,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'scanners/patch_list.cpp')
+  
+  scanned_modules.cpp
+C:\Users\sanja\source\repos\pe-sieve\scanners\module_scan_report.h(10,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'scanners/scanned_modules.cpp')
+  
+  scanner.cpp
+C:\Users\sanja\source\repos\pe-sieve\scanners\scanner.h(7,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'scanners/scanner.cpp')
+  
+  scan_report.cpp
+C:\Users\sanja\source\repos\pe-sieve\scanners\scan_report.h(10,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'scanners/scan_report.cpp')
+  
+  thread_scanner.cpp
+C:\Users\sanja\source\repos\pe-sieve\scanners\module_scanner.h(7,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'scanners/thread_scanner.cpp')
+  
+  workingset_scanner.cpp
+C:\Users\sanja\source\repos\pe-sieve\scanners\workingset_scanner.h(7,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'scanners/workingset_scanner.cpp')
+  
+  stats_analyzer.cpp
+C:\Users\sanja\source\repos\pe-sieve\utils\byte_buffer.h(3,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  (compiling source file 'stats/stats_analyzer.cpp')
+  
+  artefacts_util.cpp
+C:\Users\sanja\source\repos\pe-sieve\utils\artefacts_util.h(3,10): error C1083: Cannot open include file: 'sig_finder.h': No such file or directory
+  (compiling source file 'utils/artefacts_util.cpp')
+  
+  console_color.cpp
+C:\Users\sanja\source\repos\pe-sieve\utils\console_color.cpp(3,10): error C1083: Cannot open include file: 'paramkit.h': No such file or directory
+  format_util.cpp
+  path_converter.cpp
+  process_reflection.cpp
+  syscall_extractor.cpp
+C:\Users\sanja\source\repos\pe-sieve\utils\syscall_extractor.cpp(4,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  threads_util.cpp
+C:\Users\sanja\source\repos\pe-sieve\utils\threads_util.cpp(3,10): error C1083: Cannot open include file: 'peconv.h': No such file or directory
+  workingset_enum.cpp
+  Generating Code...

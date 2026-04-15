@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <ProjectGuid>{5FA8B2F4-C503-E938-56DA-2A3C6893772A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="dll_main.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="params_info\params_dump.cpp" />
+    <ClCompile Include="params_info\pe_sieve_params_info.cpp" />
+    <ClCompile Include="pe_sieve.cpp" />
+    <ClCompile Include="pe_sieve_api.cpp" />
+    <ClCompile Include="postprocessors\dump_report.cpp" />
+    <ClCompile Include="postprocessors\imp_rec\iat_block.cpp" />
+    <ClCompile Include="postprocessors\imp_rec\import_table_finder.cpp" />
+    <ClCompile Include="postprocessors\imp_rec\imp_reconstructor.cpp" />
+    <ClCompile Include="postprocessors\pe_buffer.cpp" />
+    <ClCompile Include="postprocessors\pe_reconstructor.cpp" />
+    <ClCompile Include="postprocessors\report_formatter.cpp" />
+    <ClCompile Include="postprocessors\results_dumper.cpp" />
+    <ClCompile Include="scanners\artefact_scanner.cpp" />
+    <ClCompile Include="scanners\code_scanner.cpp" />
+    <ClCompile Include="scanners\headers_scanner.cpp" />
+    <ClCompile Include="scanners\hook_targets_resolver.cpp" />
+    <ClCompile Include="scanners\iat_scanner.cpp" />
+    <ClCompile Include="scanners\mapping_scanner.cpp" />
+    <ClCompile Include="scanners\mempage_data.cpp" />
+    <ClCompile Include="scanners\module_cache.cpp" />
+    <ClCompile Include="scanners\module_data.cpp" />
+    <ClCompile Include="scanners\patch_analyzer.cpp" />
+    <ClCompile Include="scanners\patch_list.cpp" />
+    <ClCompile Include="scanners\scanned_modules.cpp" />
+    <ClCompile Include="scanners\scanner.cpp" />
+    <ClCompile Include="scanners\scan_report.cpp" />
+    <ClCompile Include="scanners\thread_scanner.cpp" />
+    <ClCompile Include="scanners\workingset_scanner.cpp" />
+    <ClCompile Include="stats\stats_analyzer.cpp" />
+    <ClCompile Include="utils\artefacts_util.cpp" />
+    <ClCompile Include="utils\console_color.cpp" />
+    <ClCompile Include="utils\format_util.cpp" />
+    <ClCompile Include="utils\modules_enum.cpp" />
+    <ClCompile Include="utils\path_converter.cpp" />
+    <ClCompile Include="utils\path_util.cpp" />
+    <ClCompile Include="utils\process_minidump.cpp" />
+    <ClCompile Include="utils\process_privilege.cpp" />
+    <ClCompile Include="utils\process_reflection.cpp" />
+    <ClCompile Include="utils\process_util.cpp" />
+    <ClCompile Include="utils\strings_util.cpp" />
+    <ClCompile Include="utils\syscall_extractor.cpp" />
+    <ClCompile Include="utils\threads_util.cpp" />
+    <ClCompile Include="utils\workingset_enum.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="main.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="color_scheme.h" />
+    <ClInclude Include="include\pe_sieve_api.h" />
+    <ClInclude Include="include\pe_sieve_return_codes.h" />
+    <ClInclude Include="include\pe_sieve_types.h" />
+    <ClInclude Include="params.h" />
+    <ClInclude Include="params_info\params_dump.h" />
+    <ClInclude Include="params_info\pe_sieve_params_info.h" />
+    <ClInclude Include="pe_sieve.h" />
+    <ClInclude Include="pe_sieve_report.h" />
+    <ClInclude Include="pe_sieve_ver_short.h" />
+    <ClInclude Include="postprocessors\dump_report.h" />
+    <ClInclude Include="postprocessors\imp_rec\iat_block.h" />
+    <ClInclude Include="postprocessors\imp_rec\iat_finder.h" />
+    <ClInclude Include="postprocessors\imp_rec\import_table_finder.h" />
+    <ClInclude Include="postprocessors\imp_rec\imp_reconstructor.h" />
+    <ClInclude Include="postprocessors\pe_buffer.h" />
+    <ClInclude Include="postprocessors\pe_reconstructor.h" />
+    <ClInclude Include="postprocessors\report_formatter.h" />
+    <ClInclude Include="postprocessors\results_dumper.h" />
+    <ClInclude Include="resources.h" />
+    <ClInclude Include="scanners\artefact_scanner.h" />
+    <ClInclude Include="scanners\code_scanner.h" />
+    <ClInclude Include="scanners\headers_scanner.h" />
+    <ClInclude Include="scanners\hook_targets_resolver.h" />
+    <ClInclude Include="scanners\iat_scanner.h" />
+    <ClInclude Include="scanners\mapping_scanner.h" />
+    <ClInclude Include="scanners\mempage_data.h" />
+    <ClInclude Include="scanners\module_cache.h" />
+    <ClInclude Include="scanners\module_data.h" />
+    <ClInclude Include="scanners\module_scanner.h" />
+    <ClInclude Include="scanners\module_scan_report.h" />
+    <ClInclude Include="scanners\patch_analyzer.h" />
+    <ClInclude Include="scanners\patch_list.h" />
+    <ClInclude Include="scanners\pe_section.h" />
+    <ClInclude Include="scanners\process_details.h" />
+    <ClInclude Include="scanners\process_feature_scanner.h" />
+    <ClInclude Include="scanners\scanned_modules.h" />
+    <ClInclude Include="scanners\scanner.h" />
+    <ClInclude Include="scanners\scan_report.h" />
+    <ClInclude Include="scanners\thread_scanner.h" />
+    <ClInclude Include="scanners\workingset_scanner.h" />
+    <ClInclude Include="stats\entropy.h" />
+    <ClInclude Include="stats\entropy_stats.h" />
+    <ClInclude Include="stats\multi_stats.h" />
+    <ClInclude Include="stats\stats.h" />
+    <ClInclude Include="stats\stats_analyzer.h" />
+    <ClInclude Include="stats\stats_util.h" />
+    <ClInclude Include="stats\std_dev_calc.h" />
+    <ClInclude Include="utils\artefacts_util.h" />
+    <ClInclude Include="utils\byte_buffer.h" />
+    <ClInclude Include="utils\code_patterns.h" />
+    <ClInclude Include="utils\console_color.h" />
+    <ClInclude Include="utils\custom_buffer.h" />
+    <ClInclude Include="utils\custom_mutex.h" />
+    <ClInclude Include="utils\format_util.h" />
+    <ClInclude Include="utils\modules_enum.h" />
+    <ClInclude Include="utils\ntddk.h" />
+    <ClInclude Include="utils\path_converter.h" />
+    <ClInclude Include="utils\path_util.h" />
+    <ClInclude Include="utils\process_minidump.h" />
+    <ClInclude Include="utils\process_privilege.h" />
+    <ClInclude Include="utils\process_reflection.h" />
+    <ClInclude Include="utils\process_symbols.h" />
+    <ClInclude Include="utils\process_util.h" />
+    <ClInclude Include="utils\strings_util.h" />
+    <ClInclude Include="utils\syscall_extractor.h" />
+    <ClInclude Include="utils\threads_util.h" />
+    <ClInclude Include="utils\workingset_enum.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="pe_sieve_res.rc" />
+    <ResourceCompile Include="pe_sieve_res_icon.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
