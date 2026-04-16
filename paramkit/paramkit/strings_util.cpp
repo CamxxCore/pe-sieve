@@ -7,7 +7,6 @@
 
 #define MIN(x,y) ((x) < (y) ? (x) : (y))
 
-
 std::string paramkit::util::to_lowercase(std::string str)
 {
     std::transform(str.begin(), str.end(), str.begin(), tolower);
