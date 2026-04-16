@@ -426,3 +426,19 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Visual Studio cache and workspace files
+.vs/
+*.VC.db
+*.VC.db-shm
+*.VC.db-wal
+*.VC.opendb
+
+# Precompiled headers (large files)
+*.pch
+*.ipch
+ipch/
+
+# TFS Temp files
+**/TFSTemp/**
+../../../AppData/Local/Temp/TFSTemp/

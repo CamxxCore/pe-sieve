@@ -171,6 +171,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="main.def" />
+    <None Include="STATIC_LINKING_GUIDE.md" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="color_scheme.h" />
