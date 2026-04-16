@@ -170,9 +170,11 @@
     <ClCompile Include="utils\workingset_enum.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="FORK_REBASE_GUIDE.md" />
     <None Include="GIT_CONFIGURATION.md" />
     <None Include="main.def" />
     <None Include="STATIC_LINKING_GUIDE.md" />
+    <None Include="UPSTREAM_SYNC.md" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="color_scheme.h" />
