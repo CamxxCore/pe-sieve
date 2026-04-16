@@ -9,8 +9,8 @@
 #include <iostream>
 #include <stdexcept>
 
-#include <pe_sieve_types.h>
-#include <pe_sieve_return_codes.h>
+#include "include/pe_sieve_types.h"
+#include "include/pe_sieve_return_codes.h"
 
 #include "pe_sieve_ver_short.h"
 #include "pe_sieve_report.h"

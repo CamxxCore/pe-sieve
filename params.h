@@ -4,7 +4,7 @@
 #include "pe_sieve.h"
 #include "params_info/pe_sieve_params_info.h"
 
-#include <paramkit.h>
+#include "paramkit/paramkit/include/paramkit.h"
 
 using namespace paramkit;
 using namespace pesieve;

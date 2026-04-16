@@ -1,4 +1,6 @@
 #include "patch_analyzer.h"
+#include <peconv.h>
+#include <iostream>
 //---
 using namespace pesieve;
 

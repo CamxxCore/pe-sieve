@@ -78,6 +78,7 @@
     <ClCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)paramkit\paramkit\include;$(ProjectDir)libpeconv\include;$(ProjectDir)sig_finder\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -88,6 +89,7 @@
     <ClCompile>
       <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)paramkit\paramkit\include;$(ProjectDir)libpeconv\include;$(ProjectDir)sig_finder\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -98,6 +100,7 @@
     <ClCompile>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)paramkit\paramkit\include;$(ProjectDir)libpeconv\include;$(ProjectDir)sig_finder\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -110,6 +113,7 @@
     <ClCompile>
       <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)paramkit\paramkit\include;$(ProjectDir)sig_finder\include;$(ProjectDir)libpeconv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -173,6 +177,38 @@
     <ClInclude Include="include\pe_sieve_api.h" />
     <ClInclude Include="include\pe_sieve_return_codes.h" />
     <ClInclude Include="include\pe_sieve_types.h" />
+    <ClInclude Include="libpeconv\include\peconv.h" />
+    <ClInclude Include="libpeconv\include\peconv\buffer_util.h" />
+    <ClInclude Include="libpeconv\include\peconv\caves.h" />
+    <ClInclude Include="libpeconv\include\peconv\delayed_imports_loader.h" />
+    <ClInclude Include="libpeconv\include\peconv\exceptions_parser.h" />
+    <ClInclude Include="libpeconv\include\peconv\exported_func.h" />
+    <ClInclude Include="libpeconv\include\peconv\exports_lookup.h" />
+    <ClInclude Include="libpeconv\include\peconv\exports_mapper.h" />
+    <ClInclude Include="libpeconv\include\peconv\file_util.h" />
+    <ClInclude Include="libpeconv\include\peconv\find_base.h" />
+    <ClInclude Include="libpeconv\include\peconv\fix_imports.h" />
+    <ClInclude Include="libpeconv\include\peconv\function_resolver.h" />
+    <ClInclude Include="libpeconv\include\peconv\hooks.h" />
+    <ClInclude Include="libpeconv\include\peconv\imports_loader.h" />
+    <ClInclude Include="libpeconv\include\peconv\imports_uneraser.h" />
+    <ClInclude Include="libpeconv\include\peconv\load_config_defs.h" />
+    <ClInclude Include="libpeconv\include\peconv\load_config_util.h" />
+    <ClInclude Include="libpeconv\include\peconv\logger.h" />
+    <ClInclude Include="libpeconv\include\peconv\peb_lookup.h" />
+    <ClInclude Include="libpeconv\include\peconv\pe_dumper.h" />
+    <ClInclude Include="libpeconv\include\peconv\pe_hdrs_helper.h" />
+    <ClInclude Include="libpeconv\include\peconv\pe_loader.h" />
+    <ClInclude Include="libpeconv\include\peconv\pe_mode_detector.h" />
+    <ClInclude Include="libpeconv\include\peconv\pe_raw_to_virtual.h" />
+    <ClInclude Include="libpeconv\include\peconv\pe_virtual_to_raw.h" />
+    <ClInclude Include="libpeconv\include\peconv\relocate.h" />
+    <ClInclude Include="libpeconv\include\peconv\remote_pe_reader.h" />
+    <ClInclude Include="libpeconv\include\peconv\resource_parser.h" />
+    <ClInclude Include="libpeconv\include\peconv\resource_util.h" />
+    <ClInclude Include="libpeconv\include\peconv\tls_parser.h" />
+    <ClInclude Include="libpeconv\include\peconv\unicode.h" />
+    <ClInclude Include="libpeconv\include\peconv\util.h" />
     <ClInclude Include="params.h" />
     <ClInclude Include="params_info\params_dump.h" />
     <ClInclude Include="params_info\pe_sieve_params_info.h" />
