@@ -442,3 +442,4 @@ ipch/
 # TFS Temp files
 **/TFSTemp/**
 ../../../AppData/Local/Temp/TFSTemp/
+/.github/copilot-instructions.md
