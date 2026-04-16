@@ -170,6 +170,7 @@
     <ClCompile Include="utils\workingset_enum.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="GIT_CONFIGURATION.md" />
     <None Include="main.def" />
     <None Include="STATIC_LINKING_GUIDE.md" />
   </ItemGroup>
