@@ -3,10 +3,12 @@
 ## Overview
 This guide explains how to statically link PE-sieve into your application after building it as a static library.
 
+> **PE_Sieve.lib is self-contained.** All dependencies (libpeconv, sig_finder) are compiled directly into the library. You do **not** need separate `.lib` files for these dependencies.
+
 ## Required Files
 
 ### 1. Library File
-- **PE_Sieve.lib** - The compiled static library (found in output directory after build)
+- **PE_Sieve.lib** - The compiled static library (includes libpeconv + sig_finder)
   - Debug build: `x64\Debug\PE_Sieve.lib` or `Win32\Debug\PE_Sieve.lib`
   - Release build: `x64\Release\PE_Sieve.lib` or `Win32\Release\PE_Sieve.lib`
 
@@ -19,13 +21,14 @@ pe-sieve/include/
 └── pe_sieve_return_codes.h  # Return code constants
 ```
 
-### 3. Dependency Headers (Required - Transitive Dependencies)
-These directories must be in your include path:
+### 3. Dependency Headers (Required for Compilation)
+These directories must be in your include path because PE-sieve's internal headers reference them:
 ```
-pe-sieve/libpeconv/include/     # PE manipulation library
-pe-sieve/paramkit/paramkit/include/  # Parameter handling
-pe-sieve/sig_finder/include/    # Signature matching
+pe-sieve/libpeconv/include/     # PE manipulation library headers
+pe-sieve/paramkit/paramkit/include/  # Parameter handling headers
+pe-sieve/sig_finder/include/    # Signature matching headers
 ```
+> **Note:** You only need the *headers* from these directories. Their source code is already compiled into `PE_Sieve.lib`.
 
 ## Project Configuration
 
@@ -280,6 +283,8 @@ int main()
 #define PESIEVE_STATIC_LIB  // Add this BEFORE including headers
 #include <pe_sieve_api.h>
 ```
+
+> **Note:** Since libpeconv and sig_finder are compiled into `PE_Sieve.lib`, you should **not** see unresolved externals for `peconv::` or `sig_finder::` symbols. If you do, ensure you're linking the correct build of `PE_Sieve.lib`.
 
 ### Compiler Error: "cannot open include file"
 **Cause:** Include directories not configured correctly

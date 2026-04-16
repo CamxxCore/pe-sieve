@@ -164,17 +164,54 @@
     <ClCompile Include="utils\process_privilege.cpp" />
     <ClCompile Include="utils\process_reflection.cpp" />
     <ClCompile Include="utils\process_util.cpp" />
-    <ClCompile Include="utils\strings_util.cpp" />
+    <ClCompile Include="utils\strings_util.cpp">
+      <ObjectFileName>$(IntDir)pesieve_strings_util.obj</ObjectFileName>
+    </ClCompile>
     <ClCompile Include="utils\syscall_extractor.cpp" />
     <ClCompile Include="utils\threads_util.cpp" />
     <ClCompile Include="utils\workingset_enum.cpp" />
+    <!-- libpeconv sources (compiled directly into PE_Sieve.lib) -->
+    <ClCompile Include="libpeconv\src\buffer_util.cpp" />
+    <ClCompile Include="libpeconv\src\caves.cpp" />
+    <ClCompile Include="libpeconv\src\delayed_imports_loader.cpp" />
+    <ClCompile Include="libpeconv\src\exceptions_parser.cpp" />
+    <ClCompile Include="libpeconv\src\exported_func.cpp" />
+    <ClCompile Include="libpeconv\src\exports_lookup.cpp" />
+    <ClCompile Include="libpeconv\src\exports_mapper.cpp" />
+    <ClCompile Include="libpeconv\src\file_util.cpp" />
+    <ClCompile Include="libpeconv\src\find_base.cpp" />
+    <ClCompile Include="libpeconv\src\fix_dot_net_ep.cpp" />
+    <ClCompile Include="libpeconv\src\fix_imports.cpp" />
+    <ClCompile Include="libpeconv\src\function_resolver.cpp" />
+    <ClCompile Include="libpeconv\src\hooks.cpp" />
+    <ClCompile Include="libpeconv\src\imports_loader.cpp" />
+    <ClCompile Include="libpeconv\src\imports_uneraser.cpp" />
+    <ClCompile Include="libpeconv\src\load_config_util.cpp" />
+    <ClCompile Include="libpeconv\src\peb_lookup.cpp" />
+    <ClCompile Include="libpeconv\src\pe_dumper.cpp" />
+    <ClCompile Include="libpeconv\src\pe_hdrs_helper.cpp" />
+    <ClCompile Include="libpeconv\src\pe_loader.cpp" />
+    <ClCompile Include="libpeconv\src\pe_mode_detector.cpp" />
+    <ClCompile Include="libpeconv\src\pe_raw_to_virtual.cpp" />
+    <ClCompile Include="libpeconv\src\pe_virtual_to_raw.cpp" />
+    <ClCompile Include="libpeconv\src\relocate.cpp" />
+    <ClCompile Include="libpeconv\src\remote_pe_reader.cpp" />
+    <ClCompile Include="libpeconv\src\resource_parser.cpp" />
+    <ClCompile Include="libpeconv\src\resource_util.cpp" />
+    <ClCompile Include="libpeconv\src\tls_parser.cpp" />
+    <ClCompile Include="libpeconv\src\util.cpp" />
+    <!-- sig_finder sources (compiled directly into PE_Sieve.lib) -->
+    <ClCompile Include="sig_finder\Node.cpp" />
+    <ClCompile Include="sig_finder\Signature.cpp" />
+    <!-- paramkit sources (compiled directly into PE_Sieve.lib) -->
+    <ClCompile Include="paramkit\paramkit\pk_util.cpp" />
+    <ClCompile Include="paramkit\paramkit\strings_util.cpp">
+      <ObjectFileName>$(IntDir)paramkit_strings_util.obj</ObjectFileName>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="FORK_REBASE_GUIDE.md" />
-    <None Include="GIT_CONFIGURATION.md" />
     <None Include="main.def" />
     <None Include="STATIC_LINKING_GUIDE.md" />
-    <None Include="UPSTREAM_SYNC.md" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="color_scheme.h" />
